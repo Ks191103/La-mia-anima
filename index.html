@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La mia anima</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="header">
+<a href="#" class="logo"> <i class="fas fa-utensils"></i> La mia anima </a>
+<nav class="navbar">
+<a href="#home">Главная</a>
+<a href="#about">О нас </a>
+<a href="#food">Еда</a>
+<a href="#gallery">Галерея</a>
+<a href="#menu">Меню</a>
+<a href="#order">Доставка</a>
+<a href="#blogs">Блог</a>
+</nav>
+<div id="menu-btn" class="fas fa-bars"></div>
+</section>
+<section class="home" id="home">
+<div class="swiper home-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+<div class="content">
+<h3>Вкусная кулинария</h3>
+</div>
+</div>
+<div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+<div class="content">
+<h3>Утренний момент</h3>
+</div>
+</div>
+<div class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+<div class="content">
+<h3>Эстетичная еда</h3>
+</div>
+</div>
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</section>
+<section class="about" id="about">
+<div class="image">
+<img src="images/about-img.png" alt="">
+</div>
+<div class="content">
+<h3 class="title">BUON APPETITO!</h3>
+<br>
+<p>КУХНЯ, КАКОЙ ЕЁ ЛЮБЯТ В ИТАЛИИ <br> Солёным ветром, раскалённым солнцем, сладкими булочками с корицей,терпким кофе ристретто, соком лопнувших от зрелости томатов, чудесным ароматом цветущих апельсиновых деревьев — вот, чем пахнет Италия. Такую Италию мы привезли в самое сердце Москвы. Паста, пицца, тирамису, морепродукты, сыры и брускетта — любимые итальянские блюда, по-настоящему вкусный кофе и официанты, с которыми хочется подружиться.</p>
+<div class="icons-container">
+<div class="icons">
+<img src="images/about-icon-1.png" alt="">
+<h3>Качественная еда</h3>
+</div>
+<div class="icons">
+<img src="images/about-icon-2.png" alt="">
+<h3>Еда и Напитки</h3>
+</div>
+<div class="icons">
+<img src="images/about-icon-3.png" alt="">
+<h3>Опытные повара</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="food" id="food">
+<div class="heading">  
+<span>Популярные блюда</span>
+<h3>Наша вкусная еда</h3>
+</div>
+<div class="swiper food-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide slide" data-name="food-1">
+<img src="images/food-img-1.png" alt="">
+<h3>Римская пицца томаты и страчателла</h3>
+<div class="price">630 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-2">
+<img src="images/food-img-2.png" alt="">
+ <h3>Запечённые перцы с сыром страчателла</h3>
+<div class="price">510 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-3">
+<img src="images/food-img-3.png" alt="">
+<h3>Пепперони</h3>
+<div class="price">570 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-4">
+<img src="images/food-img-4.png" alt="">
+<h3>Тыквенный крем суп с квеветками</h3>
+<div class="price">650 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-5">
+<img src="images/food-img-5.png" alt="">
+<h3>Капрезе с бурратой</h3>
+<div class="price">720 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-6">
+<img src="images/food-img-6.png" alt="">
+ <h3>Тар-тар из говядины с пармезаном</h3>
+<div class="price">710 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-7">
+<img src="images/food-img-7.png" alt="">
+ <h3>Конкильоне нери с креветками</h3>
+<div class="price">780 ₽</div>
+</div>
+<div class="swiper-slide slide" data-name="food-8">
+<img src="images/food-img-8.png" alt="">
+ <h3>Запечённый баклажан</h3>
+<div class="price">570 ₽</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<section class="food-preview-container">
+<div id="close-preview" class="fas fa-times"></div>
+<div class="food-preview" data-target="food-1">
+<img src="images/food-img-1.png" alt="">
+<h3>Римская пицца томаты и страчателла</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Римская пицца на хрустящем воздушном тесте со сливочным сыром страчателла.</p>
+<div class="price">630 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-2">
+<img src="images/food-img-2.png" alt="">
+<h3>Запечённые перцы с сыром страчателла</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Ароматные запеченные перцы с каталонским соусом Ромеско на основе красного перца и нежным, сливочным сыром страчателла.</p>
+<div class="price">510 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-3">
+<img src="images/food-img-3.png" alt="">
+<h3>Пепперони</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Классическая пицца с пикантной колбаской Пепперони, ароматной зеленью и перцем чили.</p>
+<div class="price">570 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-4">
+<img src="images/food-img-4.png" alt="">
+<h3>Тыквенный крем суп с квеветками</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Бархатистый тыквенный крем-суп с крабом. Наш тыквенный
+суп обладает гладкой консистенцией благодаря тому, что мы
+готовим его из запечённой тыквы, за тёплые ноты отвечает
+имбирь, а лемонграсс придаёт свежести в послевкусии.</p>
+<div class="price">650 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-5">
+<img src="images/food-img-5.png" alt="">
+<h3>Капрезе с бурратой</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Легкий салат со свежими помидорами черри и
+деликатесным сливочным сыром.</p>
+<div class="price">720 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-6">
+<img src="images/food-img-6.png" alt="">
+<h3>Тар-тар из говядины с пармезаном</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Изысканное блюдо из сырого мяса, которое мы готовим в
+сочетании красного лука, каперсов, желтка и ароматных
+специй. Особенностью нашего тар тара из говядины, стал
+нежный и воздушный мусс из пармезана.</p>
+<div class="price">710 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-7">
+<img src="images/food-img-7.png" alt="">
+<h3>Конкильоне нери с креветками</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Черная паста со сливочным рыбным соусом и легендарным соусом песто, основанным на 3-х китах: сыре, кедровых орехах и базилико-анчоусным маслом.</p>
+<div class="price">780 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+<div class="food-preview" data-target="food-8">
+<img src="images/food-img-8.png" alt="">
+<h3>Запечённый баклажан</h3>
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p>Баклажан с нежным сырным кремом, классическим итальянским песто на основе орехов и базилика, ну и конечно, нашей домашней томатной сальсой со специями и цитрусами.</p>
+<div class="price">570 ₽</div>
+<a href="#" class="btn">Купить сейчас</a>
+</div>
+</section>
+<section class="gallery" id="gallery">
+<div class="heading">
+<h3>Наша галерея</h3>
+</div>
+<div class="gallery-container">
+<a href="images/food-galler-img-1.jpg" class="box">
+<img src="images/food-galler-img-1.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+<a href="images/food-galler-img-2.jpg" class="box">
+<img src="images/food-galler-img-2.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+<a href="images/food-galler-img-3.jpg" class="box">
+<img src="images/food-galler-img-3.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+<a href="images/food-galler-img-4.jpg" class="box">
+<img src="images/food-galler-img-4.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+<a href="images/food-galler-img-5.jpg" class="box">
+<img src="images/food-galler-img-5.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+<a href="images/food-galler-img-6.jpg" class="box">
+<img src="images/food-galler-img-6.jpg" alt="">
+<div class="icon"> <i class="fas fa-plus"></i> </div>
+</a>
+</div>
+</section>
+<section class="menu" id="menu">
+<div class="heading">
+<h3>Наше меню</h3>
+</div>
+<div class="swiper menu-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide slide">
+<h3 class="title">Завтраки</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Большой завтрак от Марио</h3>
+<p>Куриные яйца, колбаски с пармезаном и шпинатом, бекон,
+картофельный гратен, томат, фокачча.</p>
+</div>
+<div class="price">470₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Омлет с сыром страчателла
+и вялеными томатами</h3>
+</div>
+<div class="price">410₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Скрэмбл с креветками, шпинатом и бриошь</h3>
+</div>
+<div class="price">470₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Омлет с копченым лососем
+и сливочным сыром</h3>
+</div>
+<div class="price">420₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Сырники</h3>
+<p>Сметана, ягодный соус, взбитые сливки.</p>
+</div>
+<div class="price">350₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Геркулесовая каша с ягодным соусом
+и орехами</h3>
+<p>Сметана, ягодный соус, взбитые сливки</p>
+</div>
+<div class="price">310₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Тонкие блины, 2 шт</h3>
+<p>На выбор: сметана, ягодный соус или соленая карамель.</p>
+</div>
+<div class="price">200₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Копченый лосось дополнительно</h3>
+</div>
+<div class="price">150₽</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Супы</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Гаспачо</h3>
+<p>Томатный сок, лайм, сельдерей, редис, авокадо, зелень, базилик.</p>
+</div>
+<div class="price">400₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Крем-суп из белых грибов</h3>
+<p>Белые грибы, сливки, картофель, лук порей, грибной бульон, тесто для римской пиццы.</p>
+</div>
+<div class="price">500₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Куриный суп «Ленто»</h3>
+<p>Наваристый куриный бульон с фрикадельками из птицы, яйцом и домашней лапшой прекрасно подойдет к раннему обеду.</p>
+</div>
+<div class="price">480₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Минестроне</h3>
+<p>Легкий овощной суп на основе сельдерея, моркови, фасоли, картофеля, перца, цветной капусты, томатов, зеленого горошка, шпината, базилика, соуса песто, сыра Гран Падано.</p>
+</div>
+<div class="price">350₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Крем-суп из шпината с крабом</h3>
+<p>Шпинат, лук порей, сливки 22%, картофель, масло сливочное, тимьян, соль, петрушка, яйцо перепелиное, краб, цедра лимона, мини шпинат, основа для римской пиццы.</p>
+</div>
+<div class="price">750₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Каччуко</h3>
+<p>Пикантный традиционный тосканский суп из морепродуктов на основе креветок, кальмаров, гребешков, вонголе с добавлением соуса биск, томатов черри, чеснока. Украшается базиликом. Подается с хрустящим хлебом.</p>
+</div>
+<div class="price">970₽</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Паста</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Ригатони карбонара</h3>
+<p>Паста ригатони, панчетта, сливки, яичный желток, сыр пекорино, сыр грана падано.</p>
+</div>
+<div class="price">850₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Спагетти Болоньезе</h3>
+<p>Паста спагетти, соус болоньезе, сыр грана падано.</p>
+</div>
+<div class="price">670₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Нери с морепродуктами</h3>
+<p>Прекрасное сочетание черных спагетти (за счет чернил каракатицы) с пикантной томатной основой и морепродуктами на основе кальмаров, креветок, морских гребешков и вонголе.</p>
+</div>
+<div class="price">1300₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Лингвини с вонголе в соусе песто</h3>
+<p>Паста лингвини, вонголе, томаты черри, соус песто.</p>
+</div>
+<div class="price">720₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Тальятелле со спаржей и сыром камамбер</h3>
+<p>Домашняя паста тальятелле, спаржа, шпинат, сыр камамбер, сливки, сыр грана падано.</p>
+</div>
+<div class="price">970₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Спагетти Алио-Олио</h3>
+<p>Паста спагетти, чеснок, перец чили.</p>
+</div>
+<div class="price">500₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Канелони с телятиной</h3>
+<p>Фарш: сельдерей, морковь, телятина, лук, грибы, Грано Падано, соус бешамель. Начинку помещают в трубочку из пасты, шапка из соуса бешамель, наполи, моцарелла, Грано Подано, базилик.</p>
+</div>
+<div class="price">580₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Ризотто с морепродуктами</h3>
+<p>Среднезернистый рис (карнороли), выращенный в провинции северной Италии в сочетании с розовыми помидорами, чесноком, Грано Падано, тимьяном и морепродуктами на основе морского гребешка, кальмара и креветок образуют кремовую текстуру и непередаваемый аромат. Украшают базиликом.</p>
+</div>
+<div class="price">1250₽</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Горячие блюда</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Стейк Денвер</h3>
+</div>
+<div class="price">900₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Сибас на гриле</h3>
+<p>Целиковая разделанная рыба без костей из солнечной Турции обжаривается на гриле в ароматном чесночном масле с тимьяном. Украшается свежим салатом микс. Подается с соусом Сальса на основе овощей и специй.</p>
+</div>
+<div class="price">1250₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Куриная грудка со свежими овощами</h3>
+<p>Куриная грудка, оливковое масло, чеснок, микс ,салат, соус Наполи, томаты, редис, болгарский перец, огурец.</p>
+</div>
+<div class="price">680₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Палтус с пюре из красной капусты</h3>
+<p>Крем из красной капусты, вонголе, лимоны, салат кресс, масло зеленое, облепиха, оливковое масло, филе палтуса, масло сливочное.</p>
+</div>
+<div class="price">900₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Стейк Филе-миньон</h3>
+<p>Филейная говяжья вырезка, обжаренная на гриле с ароматным оливковым маслом с добавлением чеснока, тимьяна. На гарнир подается хрустящая спаржа на гриле. Сверху мясное блюдо обдается густым соусом «Демиглас» (наваристый соус на основе выпаренных мясных костей с добавлением красного вина, овощей и пряностей).</p>
+</div>
+<div class="price">1750₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Лосось на гриле</h3>
+<p>Сочный стейк из атлантического лосося обдается на гриле с оливковым маслом, луком шалот, тимьяном. Рыбное блюдо подается на подушке из шпината, томатов черри и соуса на основе сливок и сыра горгонзола.Сочный стейк из атлантического лосося обдается на гриле с оливковым маслом, луком шалот, тимьяном. Рыбное блюдо подается на подушке из шпината, томатов черри и соуса на основе сливок и сыра горгонзола.</p>
+</div>
+<div class="price">1500₽</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Римская пицца</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Маргарита</h3>
+<p>Хрустящее тесто, прекрасное сочетание томатного соуса и тянущегося сыра моцарелла не оставят вас равнодушными. Украшается орегано, оливковым маслом.</p>
+</div>
+<div class="price">400₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Капричоза</h3>
+<p>Для гурманов прекрасно подойдет сытная пицца с ветчиной, грибами и артишоками в сопровождении с томатным соусом и сыром моцарелла.</p>
+</div>
+<div class="price">700₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Карпаччо с говядиной и карамелизированным луком</h3>
+<p>Пользуется повышенным спросом в нашем ресторане. Хрустящая пицца с карамелизированным луком и карпаччо из ароматной сырокопченой говядины, тающей во рту моцареллой. Острый перец халапеньо придает пикантности пицце. Сверху украшается пармезаном.</p>
+</div>
+<div class="price">600₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Кватро Формаджи</h3>
+<p>Ассорти из сыров на основе горгонзола, моцарелла, пармезан, чеддер с сливочным соусом.</p>
+</div>
+<div class="price">600₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Мортаделла со страчателлой</h3>
+<p>Сливочный соус, сыр моцарелла, вяленные томаты, микс салат, мортаделла, сыр стачателла.</p>
+</div>
+<div class="price">700₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Куриная грудка с печеным болгарским перцем и соусом песто</h3>
+<p>Сливочный соус, куриная грудка, печеный болгарский перец, сыр горгонзола, сыр моцарелла, красный лук, соус песто.</p>
+</div>
+<div class="price">690₽</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Неаполитанская пицца</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Калабрезе</h3>
+<p>Пикантная пицца с пепперони и острым перцем халапеньо и сыром моцарелла.</p>
+</div>
+<div class="price">600₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Лигурийская</h3>
+<p>Сливочный соус в сочетании с сочными креветками, сыром моцарелла, спелыми томатами черри поливается ароматным соусом песто и украшается свежей рукколой.</p>
+</div>
+<div class="price">970₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Мортаделла со страчателлой</h3>
+<p>Сливочный соус, сыр моцарелла, вяленные томаты, микс салат, мортаделла, сыр страчателла.</p>
+</div>
+<div class="price">980₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Пульезе</h3>
+<p>Идеальное сочетание запеченных овощей на основе баклажана, болгарского перца, цуккини, репчатого лука и сыра моцарелла.</p>
+</div>
+<div class="price">600₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Фрутти ди маре</h3>
+<p>Томатный соус, томаты черри, тигровые креветки, кальмары, морской гребешок, сыр моцарелла. руккола.</p>
+</div>
+<div class="price">960₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Прошутто Фунги</h3>
+<p>Томатный соус в балансе с ветчиной, сыром моцарелла и белыми грибами создают палитру аппетитных удовольствий.</p>
+</div>
+<div class="price">750₽</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Десерты</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>Крем-брюле</h3>
+<p>Десерт на основе кремовой текстуры за счет взбитых сливок, ванили и цедры и куриного желтка с сахаром. Украшается сезонными ягодами и мятой.</p>
+</div>
+<div class="price">300₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Медовик</h3>
+<p>Торт из заварного теста на основе меда, муки, желтка с нежным сливочным кремом из маскарпоне, сливок, сгущенного молока. Украшается свежими ягодами и мятой.</p>
+</div>
+<div class="price">400₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Панакота</h3>
+<p>Сливочный пудинг на основе молока, ванили, сахара, цедры и желатина. Украшается вареньем из вишни.</p>
+</div>
+<div class="price">350₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Тирамису</h3>
+<p>Классический итальянский десерт из маскарпоне, сливочного ликера бейлиз, кофе, печенья савоярди и яичного желтка. Украшается свежими ягодами и мятой.</p>
+</div>
+<div class="price">350₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Чизкейк</h3>
+<p>Классический торт на основе сметаны, сыра креметте, сахара, ванили и песочного теста. Сверху поливается соусом из маракуйя.</p>
+</div>
+<div class="price">550₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Ассорти итальянских сладостей</h3>
+<p>Печенье – бачи ди дама, кантучини, шоколадный трюфель, мабоне.</p>
+</div>
+<div class="price">450₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Меренговый рулет</h3>
+<p>Шоколад, песочное печенье, меренговый рулет, крем (сливки, сахар, клубника), соус манго-маракуйя, клубника, миндаль, джем, мята.</p>
+</div>
+<div class="price">420₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>Шоколадный фондан</h3>
+<p>Шоколадный кекс с жидкой начинкой из шоколада дополняется ванильным мороженым. Украшается сахарной пудрой и свежей мятой.</p>
+</div>
+<div class="price">600₽</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+<div class="swiper-slide slide">
+<h3 class="title">Эсклюзивные вина</h3>
+<div class="box-container">
+<div class="box">
+<div class="info">
+<h3>DA PINO, белое сухое/ Венето, DOC, San Matteo</h3>
+</div>
+<div class="price">1550₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>DA PINO, красное сухое/ Пьемонт, DOCG, Casa Vinicola Morando</h3>
+</div>
+<div class="price">2500₽</div>
+</div>
+<div class="box">
+<div class="info">
+<h3>DA PINO, розовое сухое/ Венето, DOC, San Matteo</h3>
+</div>
+<div class="price">1700₽</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<section class="order" id="order">
+<div class="heading">
+<h3>Быстрая доставка на дом</h3>
+</div>
+<form action="">
+<div class="box-container">
+<div class="box">
+<div class="inputBox">
+<span>Полное имя</span>
+<input type="text" placeholder="Введите своё имя">
+</div>
+<div class="inputBox">
+<span>Название продукта питания</span>
+<input type="text" placeholder="Еда, которую вы хотите">
+</div>
+<div class="inputBox">
+<span>Детали заказа</span>
+<input type="text" placeholder="Особенности связанные с едой">
+</div>
+<div class="inputBox">
+<span>Ваш адресс</span>
+<textarea name="" placeholder="Введите ваш адресс" id="" cols="30" rows="10"></textarea>
+</div>
+</div>
+<div class="box">
+<div class="inputBox">
+<span>Количество персон</span>
+<input type="number" placeholder="Введите количество персон">
+</div>
+<div class="inputBox">
+<span>Количество блюд, которые вы хотите</span>
+<input type="number" placeholder="Введите количество блюд">
+</div>
+<div class="inputBox">
+<span>Дата доставки</span>
+<input type="datetime-local">
+</div>
+<div class="inputBox">
+<span>Наш адресс</span>
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad9c61de0bc3cfc4a563aa31c5a81cdf72a147b208e55c2f0a75c00488a1733bf&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+</div>
+</div>
+</div>
+<input type="submit" value="Заказать сейчас" class="btn">
+</form>
+</section>
+<section class="blogs" id="blogs">
+<div class="heading">
+<h3>Наш блог</h3>
+</div>
+<div class="swiper blogs-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide slide">
+<div class="image">
+<img src="images/blog-img-1.jpg" alt="">
+<span>Бургер</span>
+</div>
+<div class="content">
+<div class="icon">
+<a href="#"> <i class="fas fa-calendar"></i> 23 мая, 2022 </a>
+<a href="#"> <i class="fas fa-user"></i> by admin </a>
+</div>
+<a href="#" class="title">Сочный бургер</a>
+<p></p>
+<a href="#" class="btn">Читать больше</a>
+</div>
+</div>
+<div class="swiper-slide slide">
+<div class="image">
+<img src="images/blog-img-4.jpg" alt="">
+<span>Мороженое</span>
+</div>
+<div class="content">
+<div class="icon">
+<a href="#"> <i class="fas fa-calendar"></i> 5 июля, 2022 </a>
+<a href="#"> <i class="fas fa-user"></i> by admin </a>
+</div>
+<a href="#" class="title">Мороженое на любой вкус</a>
+<p></p>
+<a href="#" class="btn">Читать больше</a>
+</div>
+</div>
+<div class="swiper-slide slide">
+ <div class="image">
+<img src="images/blog-img-5.jpg" alt="">
+<span>Пицца</span>
+</div>
+<div class="content">
+<div class="icon">
+<a href="#"> <i class="fas fa-calendar"></i> 1 мая, 2022 </a>
+<a href="#"> <i class="fas fa-user"></i> by admin </a>
+</div>
+<a href="#" class="title">Вкуснейшая пицца</a>
+<p></p>
+<a href="#" class="btn">Читать больше</a>
+</div>
+</div>
+<div class="swiper-slide slide">
+<div class="image">
+<img src="images/blog-img-6.jpg" alt="">
+<span>Кофе</span>
+</div>
+<div class="content">
+ <div class="icon">
+<a href="#"> <i class="fas fa-calendar"></i> 3 марта, 2022 </a>
+<a href="#"> <i class="fas fa-user"></i> by admin </a>
+</div>
+<a href="#" class="title">Ароматный кофе</a>
+<p></p>
+<a href="#" class="btn">Читать больше</a>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<section class="footer">
+<div class="icons-container">
+<div class="icons">
+<i class="fas fa-clock"></i>
+<h3>Часы работы</h3>
+<p>09:00 до 00:00</p>
+</div>
+<div class="icons">
+<i class="fas fa-phone"></i>
+<h3>Телефон</h3>
+<p>+7(495) 790-70-90</p>
+</div>
+<div class="icons">
+<i class="fas fa-envelope"></i>
+<h3>Email</h3>
+<p>lamiaanima@gmail.com</p>
+</div>
+<div class="icons">
+<i class="fas fa-map"></i>
+<h3>Адресс</h3>
+<p>Москва, Россия</p>
+</div>
+</div>
+<div class="credit"> </span>  Все права защищены! </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+</body>
+</html>
